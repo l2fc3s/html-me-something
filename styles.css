@@ -1,0 +1,289 @@
+html, body {
+    min-width: 290px;
+    background-color: white;
+    min-height:100%;
+    background:linear-gradient(0deg, rgb(0, 0, 0), rgba(255, 255, 255, 0.842)), url(https://wallpapercave.com/wp/wp3100985.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+/* Begin Navbar Section ------------------- */
+nav {
+    font-size: 20px;
+}
+
+.sidenav {
+    display: none;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.959);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    z-index: 1;
+    height: 45px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+li {
+    float: left;
+}
+
+.navlink {
+    display: block;
+    color: #b1b1b1;
+    text-align: center;
+    padding: 3px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.icon {
+    display: none;
+}
+
+.navlink:hover {
+    color: white;
+    font-size: 22px;
+    padding: 5px 20px;
+}
+/* End Navbar Section ----------------------- */
+
+main {
+    margin-top: 40px;
+}
+
+#headline {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Oswald', sans-serif;
+}
+
+#intro-wrap {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.intro-sig {
+    margin: 0;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.image-container {
+    background-color: black;
+    margin: 10px 5px 10px 5px;
+    width: 30%;
+    height: auto;
+    position: relative;
+}
+
+.overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image-container:hover img {
+    opacity: .1;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    /* font-size: 16px; */
+    font-size: 1.35vw;
+    font-weight: 600;
+  }
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+
+/* -------- footer ----------- */
+
+#footer {
+    height: 100px;
+    border-top: 2px solid #dbdbdb;
+    background-color: rgb(0, 0, 0);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin: 35px;
+}
+
+.footerlink {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #b1b1b1;
+    transition: 0.5s;
+}
+
+.footerlink:hover {
+    color: white;
+    font-size: 1.3em;
+}
+
+/* For Mobile Display ------------------------ */
+@media screen and (max-width: 750px) {
+    .image-container {
+        width: 80%;
+        height: auto;
+        position: relative;
+    }
+
+    .text {
+        color: white;
+        font-size: 2.5vw;
+        font-weight: 600;
+    }
+
+    #headline {
+        font-size: 3em;
+    }
+
+}
+
+
+@media screen and (max-width: 750px) {
+    /* Navbar section ------------ */
+        .navlink {
+            display: none;
+        }
+    
+        .icon {
+            display: block;
+        }
+        .iconwrapper {
+            padding: 0px;
+            text-align: left;
+        } 
+    
+        .iconwrapper-close {
+            text-align: right;
+            padding-right: 15px;
+        }
+        
+        .icon i {
+            margin: 0px;
+            font-size: 28px;
+            padding-top: 8px;
+            padding-left: 15px;
+            cursor: pointer;
+            color: #b1b1b1;
+            transition: 0.3s;
+        }
+    
+        .icon i:hover {
+            color: #ffffff;
+        }
+    
+        .sidenav {
+            z-index: 99;
+            display: block;
+            float: left;
+            height: 100%;
+            width: 0px;
+            background-image: linear-gradient(to bottom , rgb(0, 0, 0) 30%,hsla(0, 0%, 9%, 0.959) 90%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+    
+        .navlink2 {
+            display: block;
+            color: #b1b1b1;
+            text-align: left;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 28px;
+            transition: 0.3s;
+            margin-top: 10px;
+            border-bottom: 1px solid #b1b1b1;
+            
+        }
+        .navlink2:hover {
+            color: #ffffff;
+        }
+    
+        ul {
+            display: flex;
+            flex-direction: column;
+            float: left;
+            margin-top: 20px;
+        }
+    
+    /* Navbar end -------------------- */
+
+    @media screen and (max-width: 500px) {
+        #intro-wrap {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0px;
+        }
+
+        #headline {
+            font-size: 9vw;
+        }
+
+        .intro {
+            font-size: 4vw;
+            font-weight: 600;
+        }
+
+    }
