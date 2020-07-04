@@ -4,18 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Car Photography</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://use.fontawesome.com/db24a2aac3.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
 
     <!-- Nav Bar  -->
     <div id="topnav" class="topnavbar">
         <nav id="navbar">
             <ul>
-                <li><a class="navlink" href="#headline">Home</a></li>
-                <li><a class="navlink" href="#about">About</a></li>
+                <li><a class="navlink" href="#body">Home</a></li>
+                <li><a class="navlink" href="#headline">About</a></li>
                 <li><a class="navlink" href="#gallery">Gallery</a></li>
             </ul>
             <div class="iconwrapper"><a class="icon"><i onclick="openNav()" class="fa fa-bars"></i></a></div>
@@ -26,8 +29,8 @@
         <nav id="side-navbar">
             <div class="iconwrapper-close"><a class="icon"><i onclick="closeNav()" class="fa fa-times"></i></a></div>
             <ul>
-                <li><a class="navlink2" onclick="closeNav()" href="#headline">Home</a></li>
-                <li><a class="navlink2" onclick="closeNav()" href="#about">About</a></li>
+                <li><a class="navlink2" onclick="closeNav()" href="#body">Home</a></li>
+                <li><a class="navlink2" onclick="closeNav()" href="#headline">About</a></li>
                 <li><a class="navlink2" onclick="closeNav()" href="#gallery">Gallery</a></li>
             </ul>
         </nav>
@@ -36,28 +39,31 @@
 
     <main>
 
-        <article id="intro-section">
-            <h1 id="headline">My Car Photography</h1>
+        <div id="intro-wrap">
+            <article id="intro-section">
+                <h1 id="headline">My Car Photography</h1>
 
-            <div id="about">
-                <p class="intro">
-                    <em>
-                        &#34;I've always had a passion for cars. To me, they can be an extension of the person that
-                        drives them. Sometimes they represent our persona, and other times they can be the opposite. No
-                        matter what enthusiasts will always find a way to be around them. Here are a few photos that I
-                        captured over the years being around cars.&#34;
-                    </em>
-                </p>
+                <div id="about">
+                    <p class="intro">
+                        <em>
+                            &#34;I've always had a passion for cars. To me, they can be an extension of the person that
+                            drives them. Sometimes they represent our personality, and other times they can be the opposite.
+                            No
+                            matter what, enthusiasts will always find a way to be around them. Here are a few photos that
+                            I
+                            captured over the years being around cars.&#34;
+                        </em>
+                    </p>
+                </div>
                 <p class="intro-sig"><em>-Larry L.</em></p>
-
-            </div>
-        </article>
+            </article>
+        </div>
 
         <div id="gallery">
 
             <div class="image-container">
-                <a href="https://live.staticflickr.com/65535/50067726732_5b38ffbfa0.jpg" target="_blank">
-                    <img src="https://live.staticflickr.com/65535/50067726732_5b38ffbfa0.jpg">
+                <a href="https://live.staticflickr.com/65535/50074379322_2c87caf795.jpg" target="_blank">
+                    <img src="https://live.staticflickr.com/65535/50074379322_2c87caf795.jpg">
                 </a>
                 <div class="overlay">
                     <div class="text">Here is a photo of a friend's Mazda RX7 in front of the Fox Theater. Also right
@@ -66,8 +72,8 @@
             </div>
 
             <div class="image-container">
-                <a href="https://live.staticflickr.com/65535/50067467021_29cf6b26bc_z.jpg" target="_blank">
-                    <img src="https://live.staticflickr.com/65535/50067467021_29cf6b26bc_z.jpg">
+                <a href="https://live.staticflickr.com/65535/50074379287_7cddf4bf49.jpg" target="_blank">
+                    <img src="https://live.staticflickr.com/65535/50074379287_7cddf4bf49.jpg">
                 </a>
                 <div class="overlay">
                     <div class="text">This photo was taken at Worldwide Technology Raceway. This was an event called
@@ -76,8 +82,8 @@
             </div>
 
             <div class="image-container">
-                <a href="https://live.staticflickr.com/65535/50067726702_bb783bb79e_z.jpg" target="_blank">
-                    <img src="https://live.staticflickr.com/65535/50067726702_bb783bb79e_z.jpg">
+                <a href="https://live.staticflickr.com/65535/50073561888_db34c0cbb0.jpg" target="_blank">
+                    <img src="https://live.staticflickr.com/65535/50073561888_db34c0cbb0.jpg">
                 </a>
                 <div class="overlay">
                     <div class="text">This is a photo of someone drifting a Nissan 240sx at the same Midnight Madness
@@ -86,20 +92,19 @@
             </div>
 
             <div class="image-container">
-                <a href="https://live.staticflickr.com/65535/50067726752_04c4ca05c7_w.jpg" target="_blank">
-                    <img src="https://live.staticflickr.com/65535/50067726752_04c4ca05c7_w.jpg">
+                <a href="https://live.staticflickr.com/65535/50074129886_72b171322c.jpg" target="_blank">
+                    <img src="https://live.staticflickr.com/65535/50074129886_72b171322c.jpg">
                 </a>
                 <div class="overlay">
-                    <div class="text">Here's a photo of a Nissan Silvia S13 and a Skyline GTR32. The Silvia S13 is the
-                        Japanese version of the 240sx, and was not released in US. The Skyline was also not originally
-                        available in the US. Enthusiasts import these after 25 years from the release date, which makes
-                        them exempt of any import laws.</div>
+                    <div class="text">Nissan Silvia S13 and a Skyline GTR32. These were not originally available in the
+                        US. Enthusiasts import these 25 years after the release year, exempting them from import laws.
+                    </div>
                 </div>
             </div>
 
             <div class="image-container">
-                <a href="https://live.staticflickr.com/65535/50067726742_789484189c_w.jpg" target="_blank">
-                    <img src="https://live.staticflickr.com/65535/50067726742_789484189c_w.jpg">
+                <a href="https://live.staticflickr.com/65535/50074379332_ecb75bcd07.jpg" target="_blank">
+                    <img src="https://live.staticflickr.com/65535/50074379332_ecb75bcd07.jpg">
                 </a>
                 <div class="overlay">
                     <div class="text">This is another 240sx drifting at WWT Raceway. This was an amateur race where
@@ -108,29 +113,30 @@
             </div>
 
             <div class="image-container">
-                <a href="https://live.staticflickr.com/65535/50066913163_c7e59923db_w.jpg" target="_blank">
-                    <img src="https://live.staticflickr.com/65535/50066913163_c7e59923db_w.jpg">
+                <a href="https://live.staticflickr.com/65535/50074379302_ae84c10a8f.jpg" target="_blank">
+                    <img src="https://live.staticflickr.com/65535/50074379302_ae84c10a8f.jpg">
                 </a>
                 <div class="overlay">
-                    <div class="text">Here is a Nissan S15 Silvia, which is a newer version of the S13/240sx chassis.
+                    <div class="text">This is a Nissan S15 Silvia, which is a newer version of the S13/240sx chassis.
                         This car also was not released in the US, so it is quite rare to see one since it hasn't reached
                         the 25 year mark.</div>
                 </div>
             </div>
 
             <div class="image-container">
-                <a href="https://live.staticflickr.com/65535/50067726587_55ef8fed75_w.jpg" target="_blank">
-                    <img src="https://live.staticflickr.com/65535/50067726587_55ef8fed75_w.jpg">
+                <a href="https://live.staticflickr.com/65535/50074129696_5a8b3976bd.jpg" target="_blank">
+                    <img src="https://live.staticflickr.com/65535/50074129696_5a8b3976bd.jpg">
                 </a>
                 <div class="overlay">
-                    <div class="text">I took this photo of my car at Ikea. I enjoy shooting in parking lots; the painted
+                    <div class="text">I took this photo of my Toyota 86 at Ikea. I enjoy shooting in parking lots; the
+                        painted
                         lines can really bring attention to your subject.</div>
                 </div>
             </div>
 
             <div class="image-container">
-                <a href="https://live.staticflickr.com/65535/50066913168_af8bbf2e8f_w.jpg" target="_blank">
-                    <img src="https://live.staticflickr.com/65535/50066913168_af8bbf2e8f_w.jpg">
+                <a href="https://live.staticflickr.com/65535/50073561908_3df062f804.jpg" target="_blank">
+                    <img src="https://live.staticflickr.com/65535/50073561908_3df062f804.jpg">
                 </a>
                 <div class="overlay">
                     <div class="text">Here's a photo of my friend's 240sx. This was at the racetrack during a drift
@@ -139,8 +145,8 @@
             </div>
 
             <div class="image-container">
-                <a href="https://live.staticflickr.com/65535/50067726772_1ac061d3cd_w.jpg" target="_blank">
-                    <img src="https://live.staticflickr.com/65535/50067726772_1ac061d3cd_w.jpg">
+                <a href="https://live.staticflickr.com/65535/50074379362_4d59b8cd09.jpg" target="_blank">
+                    <img src="https://live.staticflickr.com/65535/50074379362_4d59b8cd09.jpg">
                 </a>
                 <div class="overlay">
                     <div class="text">Although Im not 100% sure of the model of this car, Im going to say its likely an
@@ -149,8 +155,8 @@
             </div>
 
             <div class="image-container">
-                <a href="https://live.staticflickr.com/65535/50067726777_ce6e512a31_w.jpg" target="_blank">
-                    <img src="https://live.staticflickr.com/65535/50067726777_ce6e512a31_w.jpg">
+                <a href="https://live.staticflickr.com/65535/50074379377_c668a615c2.jpg" target="_blank">
+                    <img src="https://live.staticflickr.com/65535/50074379377_c668a615c2.jpg">
                 </a>
                 <div class="overlay">
                     <div class="text">Here are a few Toyota Celica Supras. This was one of the earlier models of what
@@ -159,8 +165,8 @@
             </div>
 
             <div class="image-container">
-                <a href="https://live.staticflickr.com/65535/50067726692_10d9dedd29_w.jpg" target="_blank">
-                    <img src="https://live.staticflickr.com/65535/50067726692_10d9dedd29_w.jpg">
+                <a href="https://live.staticflickr.com/65535/50073561853_574505c815.jpg" target="_blank">
+                    <img src="https://live.staticflickr.com/65535/50073561853_574505c815.jpg">
                 </a>
                 <div class="overlay">
                     <div class="text">This is the rear end of a R32 Skyline Gtr.</div>
@@ -168,8 +174,8 @@
             </div>
 
             <div class="image-container">
-                <a href="https://live.staticflickr.com/65535/50067467101_f8fa7ee3f1_w.jpg" target="_blank">
-                    <img src="https://live.staticflickr.com/65535/50067467101_f8fa7ee3f1_w.jpg">
+                <a href="https://live.staticflickr.com/65535/50074379357_65fd21aa18.jpg" target="_blank">
+                    <img src="https://live.staticflickr.com/65535/50074379357_65fd21aa18.jpg">
                 </a>
                 <div class="overlay">
                     <div class="text">And last, we have a Nissan 370z taken in the sunset.</div>
@@ -180,22 +186,22 @@
         </div>
 
         <div id="footer">
-            <div class="ftr-links">
-                <a class="footerlink" href="#headline">Home</a>
+            <div class="footer-links">
+                <a class="footerlink" href="#body">Home</a>
 
-                <a class="footerlink" href="#about">About</a>
+                <a class="footerlink" href="#headline">About</a>
 
-                <a class="footerlink" href="#gallery">Contact</a>
+                <a class="footerlink" href="#gallery">Gallery</a>
             </div>
-            <div>
-                <p> &#169;2020 Larry LaMar</p>
-            </div>
+
+            <!--  -->
+
         </div>
     </main>
 
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "75%";
+            document.getElementById("mySidenav").style.width = "60%";
         }
 
         function closeNav() {
