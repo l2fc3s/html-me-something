@@ -98,6 +98,12 @@ main {
     font-weight: 600;
 }
 
+#instructions {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -194,8 +200,12 @@ img {
     #headline {
         font-size: 3em;
     }
-    
+
     .image-link {
+        cursor: default;
+    }
+    
+    .image-link:active {
         pointer-events: none;  
         cursor: default;      
         text-decoration: none;
