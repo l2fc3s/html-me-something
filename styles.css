@@ -194,7 +194,13 @@ img {
     #headline {
         font-size: 3em;
     }
-
+    
+    .image-link {
+        pointer-events: none;  
+        cursor: default;      
+        text-decoration: none;
+        display: block;
+    }
 }
 
 
